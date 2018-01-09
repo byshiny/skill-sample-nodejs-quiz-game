@@ -46,6 +46,19 @@ Alexa, start Quiz Game
 * Node.js (> v4.3)
 * Register for an [AWS Account](https://aws.amazon.com/)
 * Register for an [Amazon Developer Account](https://developer.amazon.com/)
+* Setup AWS cli(for linux it should be sudo apt-get install awscli)
+* Follow instructions to setup AWS CLI Configurations in this link [AWS CLI IAM](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html)
+* You must setup a access key ID and passphrase. To do this, create a new group that specifies the priviledges required for the sample application, and then add the new user to that group.For this sample file, you need the lambda execute permission. 
+
+From your console, go to users -> usename you created --> security crededentials --> create access key.  
+
+* Then run aws configure, and fill out this prompt:
+ aws configure
+AWS Access Key ID [None]: AKIAIOSFODNN7EXAMPLE(YOUR ACCESS KEY NAME)
+AWS Secret Access Key [None]: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY(YOUR SECRET ACCESS KEY)
+Default region name [None]: us-west-2(PICK ONE CLOSE TO YOU)
+Default output format [None]: json
+
 * Install and Setup [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html)
 
 ### Installation
